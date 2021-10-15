@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E12272.Views.UpdatePageGps">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Codigo" Grid.Row="0" Grid.Column="0" />
+                <Entry x:Name="txtid" Grid.Row="0" Grid.Column="1" Text="{Binding codigo}" IsReadOnly="True" />
+
+                <Label Text="Latitud actual" Grid.Row="1" Grid.Column="0" />
+                <Entry x:Name="txtlat" Placeholder="Ingrese su Latitud" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" Text="{Binding latitud}" />
+
+                <Label Text="Longitud actual" Grid.Row="2" Grid.Column="0" />
+                <Entry x:Name="txtlon" Placeholder="Ingrese su Longitud" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" Text="{Binding longitud}" />
+
+                <Label Text="Describa la Ubicacion" Grid.Row="3" Grid.Column="0" />
+                <Editor x:Name="txtdireccion" Placeholder="Ingrese su Direccion" Grid.Row="3" Grid.Column="1" Text="{Binding direccion}" />
+
+                <Label Text="Descripcion corta" Grid.Row="4" Grid.Column="0" />
+                <Entry x:Name="txtcorta" Placeholder="ej. Nombre de un local" Grid.Row="4" Grid.Column="1" Text="{Binding direcorta}" />
+
+                <Button x:Name="btnActualizar" Text="Actualizar Persona" Clicked="btnActualizar_Clicked" Grid.Row="5" Grid.Column="0" />
+                <Button x:Name="btnEliminar" Text="Eliminar Persona" Clicked="btnEliminar_Clicked" Grid.Row="5" Grid.Column="1" />
+
+            </Grid>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

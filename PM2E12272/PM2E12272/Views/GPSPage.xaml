@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E12272.Views.GPSPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+
+                <Label Text="Latitud actual"></Label>
+                <Entry x:Name="txtlat" Placeholder="Ingrese su Latitud" Keyboard="Numeric"></Entry>
+
+                <Label Text="Longitud actual"></Label>
+                <Entry x:Name="txtlon" Placeholder="Ingrese su Longitud" Keyboard="Numeric"></Entry>
+
+                <Label Text="Describa la Ubicacion"></Label>
+                <Editor x:Name="txtdireccion" Placeholder="Ingrese su Direccion" />
+
+                <Label Text="Descripcion corta"></Label>
+                <Entry x:Name="txtcorta" Placeholder="ej. Nombre de un local" ></Entry>
+
+                <Button x:Name="btnsalvar" Text="Salvar Ubicacion" Clicked="btnsalvar_Clicked" />
+                <Button x:Name="btnsalvado" Text="Ubicaciones Salvadas" Clicked="btnsalvado_Clicked" />
+                <Button x:Name="btnMostar" Text="Mostrar Ubicaciones" Clicked="btnMostar_Clicked" />
+            
+                
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

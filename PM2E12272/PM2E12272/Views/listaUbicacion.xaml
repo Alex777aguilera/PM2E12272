@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E12272.Views.listaUbicacion">
+
+
+    <ListView x:Name="lsGPS" ItemTapped="lsGPS_ItemTapped">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="99" />
+                            <RowDefinition Height="99" />
+                            <RowDefinition Height="99" />
+                            <RowDefinition Height="99" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="{Binding codigo}" Grid.Row="0" Grid.Column="0" TextColor="DarkBlue" />
+                        <Label Text="{Binding latitud}" Grid.Row="0" Grid.Column="1" TextColor="DarkBlue" />
+                        <Label Text="{Binding longitud}" Grid.Row="0" Grid.Column="2" TextColor="DarkBlue" />
+                        <Label Text="{Binding direccion}" Grid.Row="0" Grid.Column="3" TextColor="DarkBlue" />
+                        <Label Text="{Binding direcorta}" Grid.Row="0" Grid.Column="4" TextColor="DarkBlue" />
+
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
+</ContentPage>
